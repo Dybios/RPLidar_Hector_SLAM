@@ -15,7 +15,7 @@ LASER_ANGLE_SAMPLES = 50
 
 def tof_laserscan_publisher(frame_id):
 
-    scan_pup = rospy.Publisher('tof_laser', LaserScan, queue_size=0)
+    scan_pup = rospy.Publisher('scan', LaserScan, queue_size=0)
 
     scan = LaserScan()
 
@@ -48,4 +48,4 @@ def tof_laserscan_publisher(frame_id):
 
 if __name__ == "__main__":
     rospy.init_node("tofservo")
-    tof_laserscan_publisher(frame_id="map")
+    tof_laserscan_publisher(frame_id="laser")
