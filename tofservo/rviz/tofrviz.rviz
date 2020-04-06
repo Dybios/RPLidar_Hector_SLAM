@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RPLidarLaserScan1
+        - /TOFLaserScan1
       Splitter Ratio: 0.5
     Tree Height: 413
   - Class: rviz/Selection
@@ -66,14 +66,14 @@ Visualization Manager:
       Max Intensity: 4096
       Min Color: 0; 0; 0
       Min Intensity: 0
-      Name: RPLidarLaserScan
+      Name: TOFLaserScan
       Position Transformer: XYZ
       Queue Size: 1000
       Selectable: true
       Size (Pixels): 5
       Size (m): 0.03
       Style: Squares
-      Topic: /scan
+      Topic: /tof_laser
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
